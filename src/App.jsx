@@ -3,6 +3,7 @@ import './css/home.css'
 import Home from './pages/home'
 import Top from './components/Top'
 import Down from './components/Down'
+import Last from './Last'
 
 function App() {
   
@@ -13,6 +14,7 @@ function App() {
       <div className='flex flex-wrap'>
         <Top />
         <Down />
+        <Last />
       </div>
     </>
   )

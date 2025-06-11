@@ -15,13 +15,16 @@ const  fake =  {
     ],
     fatzy: [
         {id:1 , name: '👋 Hi , i\'m @fatzy070'},
-        {id:1 , name: ' 👀 I’m interested in ...'},
-        {id:1 , name: '🌱 I’m currently learning ...'},
-        {id:1 , name: ' 💞️ I’m looking to collaborate on '},
-        {id:1 , name: ' 📫 How to reach me ...'},
-        {id:1 , name: ' 😄 Pronouns: ...'},
-        {id:1 , name: '⚡ Fun fact: ...'},
+        {id:2 , name: ' 👀 I’m interested in ...'},
+        {id:3 , name: '🌱 I’m currently learning ...'},
+        {id:4 , name: ' 💞️ I’m looking to collaborate on '},
+        {id:5 , name: ' 📫 How to reach me ...'},
+        {id:6 , name: ' 😄 Pronouns: ...'},
+        {id:7 , name: '⚡ Fun fact: ...'},
+        {id:8},
     ],
+    introduce:'Introduce yourself with a profile README',
+    share:'Share information about yourself by creating a profile README, which appears at the top of your profile page.',
     starts:'Start a new repository for Fatzy070',
     text:"A repository contains all of your project's files, revision history, and collaborator discussion.",
     name : 'Repository name',
@@ -32,10 +35,6 @@ const  fake =  {
     code:[
         {id: 1 , icon:faCode , name:'Get code feedback'},
         {id: 1 , icon:faPaperPlane , name:'Create a profile README for me '},
-    ],
-    GUI: [
-        {id:1 , head:'Simplify your development workflow with a GUI' , image:gitImage , link:'Install GitHub Desktop' , text:'to visualize, commit, and push changes without ever touching the command line.'},
-        {id:1 , head:'Simplify your development workflow with a GUI' , image:gitImage , link:'the github.dev web-based editor' , text:'from your repository or pull request to create and commit changes.'},
     ],
     issue: faCodePullRequest , 
     flow:'Follow this exercise to try the GitHub flow',
@@ -53,7 +52,15 @@ const  fake =  {
     remove:'Remove from dashboard',
     dot:faEllipsis,
     code:faCode , 
-    start:'Start writing code'
+    start:'Start writing code',
+    create:'Create a new repository',
+    tools:'Use tools of the trade',
+    get:'Get started on GitHub',
+    flow:'Follow this exercise to try the GitHub flow',
+    own:"GitHub's “Hello World” tutorial teaches you essentials, where you create your own repository and learn GitHub's pull request workflow for creating and reviewing code",
+    try:'Try the GitHub flow '
+ 
+
 
 }
 export default fake;

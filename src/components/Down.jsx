@@ -4,6 +4,9 @@ import { Slash, Search , Settings , SendHorizonal}
 from "lucide-react";
 import Show from './Show';
 import { useState } from "react";
+import gitimage from '../assets/git-image.png'
+import gitlogo from '../assets/logo-git.png'
+import Feed from './Feed';
 
 
 const Down = () => {
@@ -65,7 +68,7 @@ const Down = () => {
                         <p>{fake.learn}</p>
                     </div>
                 </div>
-                <div onClick={toggledash} className='relative'>
+                <div onClick={toggleDash} className='relative'>
                     <FontAwesomeIcon icon={fake.dot} />
                    {showDash && (
                      <div className='remove'>
@@ -103,17 +106,150 @@ const Down = () => {
                    )}
                 </div>
             </div>
-            <div>
+       <section className='grid grid-cols-1 gap-3 md:grid-cols-2'>
+               <div className='starts'>
                 <h5>{fake.starts}</h5>
                 <p>{fake.text}</p>
-                <form action="">
+                <form action="" className='respo'>
                     <label htmlFor="">{fake.name}</label><br />
                     <input type="text" placeholder='name your new repository...' />
                 </form>
-                <div>
-                    
+                <div className='radio'>
+                    <div>
+                        <input type="radio" name=''  className="custom-radio" />
+                    </div>
+                    <div>
+                        <h3>public</h3>
+                        <p>Anyone on the internet can see this repository</p>
+                    </div>
+                </div>
+                <div className='radio'>
+                    <div>
+                        <input type="radio" name=''  className="custom-radio" />
+                    </div>
+                    <div>
+                        <h3>private</h3>
+                        <p>You choose who can see and commit to this repository</p>
+                    </div>
+                </div>
+                <div className='create'>
+                    <p>{fake.create}</p>
                 </div>
             </div>
+            <div className='starts'>
+                <h5>{fake.introduce}</h5>
+                <p>{fake.share}</p>
+                <div className='allread'>
+                    <div className='read'>
+                    <div>
+                        <h1>Fatzy070/README <span>.md</span></h1>
+                    </div>
+                    <div className='crea'>
+                        <p>Create</p>
+                    </div>
+                </div>
+                <div>
+                    <ol className='order'>
+                        {fake.fatzy.map((item , index) => (
+                            <div key={index} className='flex  gap-1.5'>
+                                <div className='text-[10px] text-gray-400'>{item.id}</div>
+                                <div>
+                                    <li className='mono'>- {item.name}</li>
+                                </div>
+                            </div>
+                        ))}
+                    </ol>
+                </div>
+                </div>
+            </div>
+       </section>
+        <div  className='dot'>
+                <div className='flex items-center gap-1.5'>
+                    <div>
+                        <FontAwesomeIcon icon={fake.sun} className='icon'/>
+                    </div>
+                    <div className='icon'>
+                        <p>{fake.tools}</p>
+                    </div>
+                </div>
+                <div onClick={toggleDash} className='relative'>
+                    <FontAwesomeIcon icon={fake.dot} />
+                   {showDash && (
+                     <div className='remove'>
+                        <p>{fake.remove}</p>
+                    </div>
+                   )}
+                </div>
+            </div>
+            <div className='grid grid-cols-1 gap-2.5 md:grid-cols-2'>
+                <div className='simply'>
+                    <h1>Simplify your development workflow with a GUI</h1>
+                    <div className='work'>
+                        <div className='gitimage'>
+                            <img src={gitimage} alt={fake.create} />
+                        </div>
+                        <div>
+                            <p><span>Install GitHub Desktop </span>  to visualize, commit, and push changes without ever touching the command line.</p>
+                        </div>
+                    </div>
+                </div>
+                <div className='simply'>
+                    <h1>Write code in your web browser</h1>
+                    <div className='work'>
+                        <div className='gitimage'>
+                            <img src={gitimage} alt={fake.create} />
+                        </div>
+                        <div>
+                            <p>Use <span> the github.dev web-based editor </span>  from your repository or pull request to create and commit changes.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+             <div  className='dot'>
+                <div className='flex items-center gap-1.5'>
+                    <div>
+                        <FontAwesomeIcon icon={fake.sun} className='icon'/>
+                    </div>
+                    <div className='icon'>
+                        <p>{fake.get}</p>
+                    </div>
+                </div>
+                <div onClick={toggleDash} className='relative'>
+                    <FontAwesomeIcon icon={fake.dot} />
+                   {showDash && (
+                     <div className='remove'>
+                        <p>{fake.remove}</p>
+                    </div>
+                   )}
+                </div>
+            </div>
+            <div className='grid grid-cols-1 gap-2.5 md:grid-cols-2'>
+                <div className='imagess'>
+                    <img src={gitimage} alt="" />
+                </div>
+                <div className='essen'>
+                    <FontAwesomeIcon  icon={fake.issue} className='issues'/>
+                    <h2>{fake.flow}</h2>
+                    <p>{fake.own}</p>
+                    <div className='try'>
+                        <p>{fake.try}</p>
+                    </div>
+                </div>
+            </div>
+            <div className='feed'>
+                <div>
+                    <h1>Feed</h1>
+                </div>
+                <div className='chart'>
+                    <div>
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <div>
+                        <p>Filter</p>
+                    </div>
+                </div>
+            </div>
+            <Feed />
         </section>
         </>
     );
