@@ -3,7 +3,8 @@ import '../css/last.css'
 
 const Last = () => {
   return (
-    <div className="last-container">
+   <div className="flex justify-center">
+     <div className="last-container">
       <h1 className="last-header">Latest changes</h1>
       <div className="last-timeline">
         <div className="last-item">
@@ -51,6 +52,7 @@ const Last = () => {
         </a>
       </div>
     </div>
+   </div>
   );
 };
 
