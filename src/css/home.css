@@ -348,7 +348,6 @@ body {
     background-color: rgba(13,17,23,255);
     display: none;
     margin-top: 2rem;
-    position: fixed;
 }
 .news {
     display: flex;
